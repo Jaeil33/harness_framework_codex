@@ -1,0 +1,15 @@
+{
+  "context_files": [
+    "agent.md",
+    "docs/PRD.md",
+    "docs/ARCHITECTURE.md",
+    "docs/ADR.md",
+    "docs/UI_GUIDE.md"
+  ],
+  "verification_commands": [
+    ["python", "-B", "-m", "unittest", "discover", "-s", "scripts", "-p", "test_*.py"]
+  ],
+  "max_attempts": 3,
+  "codex_timeout_seconds": 1800,
+  "check_timeout_seconds": 300
+}

@@ -1,0 +1,14 @@
+{
+  "project": "Codex Harness Smoke Test",
+  "phase": "0-smoke",
+  "steps": [
+    {
+      "step": 0,
+      "name": "smoke-artifact",
+      "status": "pending",
+      "checks": [
+        ["python", "-c", "from pathlib import Path; assert Path('artifacts/smoke.txt').read_text(encoding='utf-8') == 'Codex harness OK\\n'"]
+      ]
+    }
+  ]
+}
